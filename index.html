@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cris Arvin Goteza | Student Resume</title>
+
+<style>
+
+/* ================= BASIC ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: #ffffff;
+    border-bottom: 1px solid #00ffff;
+
+    padding: 16px 10px;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin: 0 8px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaaa;
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    background: #ffffff;
+    color: #000000;
+
+    min-height: 100vh;
+
+    padding: 110px 20px 70px;
+}
+
+
+/* ================= HOME ================= */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.home-text h1 span {
+    color: #00aaaa;
+}
+
+.home-text p {
+    color: #000000;
+    font-size: 17px;
+}
+
+
+/* ================= NAME POP ANIMATION ================= */
+
+.name-animation {
+    display: inline-block;
+    color: #00aaaa;
+}
+
+.name-animation span {
+    display: inline-block;
+
+    opacity: 0;
+
+    transform:
+        scale(0.3)
+        translateY(15px);
+
+    animation:
+        popLetter 0.35s ease-out forwards;
+}
+
+/* C */
+.name-animation span:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+/* r */
+.name-animation span:nth-child(2) {
+    animation-delay: 0.10s;
+}
+
+/* i */
+.name-animation span:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+/* s */
+.name-animation span:nth-child(4) {
+    animation-delay: 0.20s;
+}
+
+/* space */
+.name-animation span:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+/* A */
+.name-animation span:nth-child(6) {
+    animation-delay: 0.30s;
+}
+
+/* r */
+.name-animation span:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+/* v */
+.name-animation span:nth-child(8) {
+    animation-delay: 0.40s;
+}
+
+/* i */
+.name-animation span:nth-child(9) {
+    animation-delay: 0.45s;
+}
+
+/* n */
+.name-animation span:nth-child(10) {
+    animation-delay: 0.50s;
+}
+
+/* space */
+.name-animation span:nth-child(11) {
+    animation-delay: 0.55s;
+}
+
+/* G */
+.name-animation span:nth-child(12) {
+    animation-delay: 0.60s;
+}
+
+/* o */
+.name-animation span:nth-child(13) {
+    animation-delay: 0.65s;
+}
+
+/* t */
+.name-animation span:nth-child(14) {
+    animation-delay: 0.70s;
+}
+
+/* e */
+.name-animation span:nth-child(15) {
+    animation-delay: 0.75s;
+}
+
+/* z */
+.name-animation span:nth-child(16) {
+    animation-delay: 0.80s;
+}
+
+/* a */
+.name-animation span:nth-child(17) {
+    animation-delay: 0.85s;
+}
+
+@keyframes popLetter {
+
+    0% {
+        opacity: 0;
+        transform:
+            scale(0.3)
+            translateY(15px);
+    }
+
+    70% {
+        opacity: 1;
+        transform:
+            scale(1.15)
+            translateY(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            scale(1)
+            translateY(0);
+    }
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 5px solid #00ffff;
+
+    box-shadow:
+        0 0 30px rgba(0,255,255,0.35);
+
+    flex-shrink: 0;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    text-align: center;
+
+    font-size: 34px;
+
+    color: #00aaaa;
+
+    margin-bottom: 45px;
+}
+
+
+/* ================= CARD ================= */
+
+.card {
+    width: 100%;
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #00ffff;
+
+    border-radius: 12px;
+
+    color: #000000;
+
+    box-shadow:
+        0 0 20px rgba(0,255,255,0.12);
+}
+
+.card p {
+    color: #000000;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education-item {
+    margin-bottom: 28px;
+}
+
+.education-item strong {
+    display: block;
+
+    color: #00aaaa;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    color: #000000;
+}
+
+
+/* ================= PERSONAL ================= */
+
+#personal .card {
+    text-align: center;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    background: #ffffff;
+
+    color: #000000;
+
+    border: 1px solid #00ffff;
+
+    padding: 13px 18px;
+
+    margin-bottom: 12px;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.skills-list li:hover {
+    color: #00aaaa;
+
+    transform:
+        translateX(5px);
+}
+
+
+/* ================================================= */
+/* ================= PROJECTS ====================== */
+/* ================================================= */
+
+.projects-container {
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.project {
+
+    background: #ffffff;
+
+    border: 1px solid #00ffff;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 0 20px rgba(0,255,255,0.12);
+
+    transition: 0.3s;
+}
+
+.project:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 0 25px rgba(0,255,255,0.25);
+}
+
+.project h3 {
+
+    color: #00aaaa;
+
+    margin-bottom: 18px;
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* ================= PROJECT INPUTS ================= */
+
+.project input {
+
+    width: 100%;
+
+    padding: 11px;
+
+    margin: 5px 0;
+
+    border:
+        1px solid #00aaaa;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    font-size: 16px;
+}
+
+
+/* ================= PROJECT BUTTONS ================= */
+
+.project button {
+
+    padding: 10px 15px;
+
+    margin: 5px;
+
+    border:
+        1px solid #00aaaa;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.project button:hover {
+
+    background: #00aaaa;
+
+    color: #ffffff;
+}
+
+
+/* ================= CALCULATOR ================= */
+
+.calculator-display {
+
+    width: 100%;
+
+    height: 55px;
+
+    font-size: 22px;
+
+    text-align: right;
+
+    padding: 10px;
+
+    border:
+        1px solid #00aaaa;
+
+    border-radius: 6px;
+
+    margin-bottom: 10px;
+}
+
+.calc-buttons {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+}
+
+.calc-buttons button {
+
+    margin: 3px;
+
+    font-size: 16px;
+}
+
+
+/* ================= CLOCK ================= */
+
+.clock-display {
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    color: #00aaaa;
+
+    padding: 20px 0;
+}
+
+
+/* ================= STOPWATCH ================= */
+
+.stopwatch-display {
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    color: #00aaaa;
+
+    padding: 20px 0;
+}
+
+
+/* ================= RPS ================= */
+
+.rps-buttons {
+
+    text-align: center;
+}
+
+.rps-result {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= EXPERIENCE ================= */
+
+#experience .card h3 {
+
+    color: #00aaaa;
+
+    margin-bottom: 15px;
+
+    font-size: 21px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-info {
+
+    text-align: center;
+}
+
+.contact-info p {
+
+    color: #000000;
+
+    margin: 22px 0;
+
+    font-size: 17px;
+}
+
+.contact-info strong {
+
+    display: block;
+
+    color: #00aaaa;
+
+    margin-bottom: 5px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background: #ffffff;
+
+    color: #000000;
+
+    text-align: center;
+
+    padding: 25px 10px;
+
+    border-top:
+        1px solid #00ffff;
+
+    font-size: 14px;
+}
+
+footer span {
+
+    color: #00aaaa;
+}
+
+
+/* ================================================= */
+/* ================= PHONE ========================= */
+/* ================================================= */
+
+@media (max-width: 750px) {
+
+    nav {
+
+        justify-content:
+            flex-start;
+    }
+
+    nav a {
+
+        font-size: 12px;
+
+        margin:
+            0 8px;
+    }
+
+    .home-container {
+
+        flex-direction:
+            column-reverse;
+
+        text-align:
+            center;
+    }
+
+    .profile {
+
+        width: 210px;
+        height: 210px;
+    }
+
+    .home-text h1 {
+
+        font-size: 31px;
+    }
+
+    .home-text p {
+
+        font-size: 17px;
+    }
+
+    .section-title {
+
+        font-size: 28px;
+    }
+
+    .card {
+
+        padding: 22px;
+    }
+
+    .projects-container {
+
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+/* ================= PROJECT STATUS ================= */
+
+.project-result {
+
+    text-align: center;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    margin-top: 12px;
+
+    color: #00aaaa;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- ================= NAVIGATION ==================== -->
+<!-- ================================================= -->
+
+<nav>
+
+    <a href="#home">
+        Home
+    </a>
+
+    <a href="#education">
+        Education
+    </a>
+
+    <a href="#personal">
+        Personal info
+    </a>
+
+    <a href="#projects">
+        Projects
+    </a>
+
+    <a href="#skills">
+        Skills
+    </a>
+
+    <a href="#experience">
+        Experience
+    </a>
+
+    <a href="#contact">
+        Contact
+    </a>
+
+</nav>
+
+
+<!-- ================================================= -->
+<!-- ================= HOME =========================== -->
+<!-- ================================================= -->
+
+<section id="home">
+
+    <div class="home-container">
+
+        <div class="home-text">
+
+            <h1>
+
+                Hi, it's
+
+                <span class="name-animation">
+
+                    <span>C</span>
+                    <span>r</span>
+                    <span>i</span>
+                    <span>s</span>
+
+                    <span>&nbsp;</span>
+
+                    <span>A</span>
+                    <span>r</span>
+                    <span>v</span>
+                    <span>i</span>
+                    <span>n</span>
+
+                    <span>&nbsp;</span>
+
+                    <span>G</span>
+                    <span>o</span>
+                    <span>t</span>
+                    <span>e</span>
+                    <span>z</span>
+                    <span>a</span>
+
+                </span>
+
+            </h1>
+
+            <p>
+                I am an ICT student from SNHS.
+            </p>
+
+        </div>
+
+
+        <div class="profile">
+
+            <img
+                src="MyPicture.png"
+                alt="Cris Arvin Goteza"
+                >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= EDUCATION ===================== -->
+<!-- ================================================= -->
+
+<section id="education">
+
+    <h2 class="section-title">
+        EDUCATION
+    </h2>
+
+    <div class="card">
+
+        <div class="education-item">
+
+            <strong>
+                School
+            </strong>
+
+            <p>
+                Subic National High School
+            </p>
+
+        </div>
+
+
+        <div class="education-item">
+
+            <strong>
+                Year Level
+            </strong>
+
+            <p>
+                Grade 11
+            </p>
+
+        </div>
+
+
+        <div class="education-item">
+
+            <strong>
+                Strand
+            </strong>
+
+            <p>
+                ICT Programming
+            </p>
+
+        </div>
+
+
+        <div class="education-item">
+
+            <strong>
+                Section
+            </strong>
+
+            <p>
+                Modesty
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= PERSONAL INFO ================= -->
+<!-- ================================================= -->
+
+<section id="personal">
+
+    <h2 class="section-title">
+        MYSELF
+    </h2>
+
+    <div class="card">
+
+        <p>
+
+            I am an ICT student who is interested in
+            technology and learning new skills.
+            I am hardworking, responsible, and
+            willing to learn. I enjoy exploring
+            computers and improving my abilities.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= PROJECTS ====================== -->
+<!-- ================================================= -->
+
+<section id="projects">
+
+    <h2 class="section-title">
+        PROJECTS
+    </h2>
+
+
+    <div class="projects-container">
+
+
+        <!-- ================= CALCULATOR ================= -->
+
+        <div class="project">
+
+            <h3>
+                🧮 Calculator
+            </h3>
+
+            <input
+                type="text"
+                id="calcDisplay"
+                class="calculator-display"
+                readonly
+            >
+
+
+            <div class="calc-buttons">
+
+                <button onclick="clearCalc()">
+                    C
+                </button>
+
+                <button onclick="deleteCalc()">
+                    ⌫
+                </button>
+
+                <button onclick="addCalc('%')">
+                    %
+                </button>
+
+                <button onclick="addCalc('/')">
+                    ÷
+                </button>
+
+
+                <button onclick="addCalc('7')">
+                    7
+                </button>
+
+                <button onclick="addCalc('8')">
+                    8
+                </button>
+
+                <button onclick="addCalc('9')">
+                    9
+                </button>
+
+                <button onclick="addCalc('*')">
+                    ×
+                </button>
+
+
+                <button onclick="addCalc('4')">
+                    4
+                </button>
+
+                <button onclick="addCalc('5')">
+                    5
+                </button>
+
+                <button onclick="addCalc('6')">
+                    6
+                </button>
+
+                <button onclick="addCalc('-')">
+                    −
+                </button>
+
+
+                <button onclick="addCalc('1')">
+                    1
+                </button>
+
+                <button onclick="addCalc('2')">
+                    2
+                </button>
+
+                <button onclick="addCalc('3')">
+                    3
+                </button>
+
+                <button onclick="addCalc('+')">
+                    +
+                </button>
+
+
+                <button onclick="addCalc('0')">
+                    0
+                </button>
+
+                <button onclick="addCalc('.')">
+                    .
+                </button>
+
+                <button
+                    onclick="calculate()"
+                    style="grid-column: span 2;"
+                >
+                    =
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= WEATHER ================= -->
+
+        <div class="project">
+
+            <h3>
+                🌤️ Weather
+            </h3>
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city"
+            >
+
+            <button onclick="getWeather()">
+                Check Weather
+            </button>
+
+            <div
+                id="weatherResult"
+                class="project-result"
+            >
+
+                Enter a city to check
+                the weather.
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CLOCK ================= -->
+
+        <div class="project">
+
+            <h3>
+                🕐 Digital Clock
+            </h3>
+
+            <div
+                id="clock"
+                class="clock-display"
+            >
+                00:00:00
+            </div>
+
+            <div style="text-align:center;">
+
+                Live Time
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= STOPWATCH ================= -->
+
+        <div class="project">
+
+            <h3>
+                ⏱️ Stopwatch
+            </h3>
+
+            <div
+                id="stopwatch"
+                class="stopwatch-display"
+            >
+                00:00:00
+            </div>
+
+
+            <div style="text-align:center;">
+
+                <button onclick="startStopwatch()">
+                    Start
+                </button>
+
+                <button onclick="pauseStopwatch()">
+                    Pause
+                </button>
+
+                <button onclick="resetStopwatch()">
+                    Reset
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ROCK PAPER SCISSORS ================= -->
+
+        <div class="project">
+
+            <h3>
+                ✊ Rock Paper Scissors
+            </h3>
+
+
+            <div class="rps-buttons">
+
+                <button onclick="playRPS('Rock')">
+
+                    ✊ Rock
+
+                </button>
+
+
+                <button onclick="playRPS('Paper')">
+
+                    ✋ Paper
+
+                </button>
+
+
+                <button onclick="playRPS('Scissors')">
+
+                    ✌️ Scissors
+
+                </button>
+
+            </div>
+
+
+            <div
+                id="rpsResult"
+                class="rps-result"
+            >
+
+                Choose your move!
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= SKILLS ======================== -->
+<!-- ================================================= -->
+
+<section id="skills">
+
+    <h2 class="section-title">
+        SKILLS
+    </h2>
+
+    <div class="card">
+
+        <ul class="skills-list">
+
+            <li>
+                • Coding
+            </li>
+
+            <li>
+                • Willingness to learn
+            </li>
+
+            <li>
+                • Basic computer skills
+            </li>
+
+            <li>
+                • Creativity
+            </li>
+
+            <li>
+                • Adaptability
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= EXPERIENCE ==================== -->
+<!-- ================================================= -->
+
+<section id="experience">
+
+    <h2 class="section-title">
+        STUDENT EXPERIENCE
+    </h2>
+
+    <div class="card">
+
+        <h3>
+            ICT | GR9 - GR11
+        </h3>
+
+        <p>
+
+            Gained experience through ICT projects,
+            computer activities, presentations,
+            and group work. Developed teamwork,
+            communication, and basic technical skills.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= CONTACT ======================= -->
+<!-- ================================================= -->
+
+<section id="contact">
+
+    <h2 class="section-title">
+        CONTACT
+    </h2>
+
+
+    <div class="card contact-info">
+
+
+        <p>
+
+            <strong>
+                Phone
+            </strong>
+
+            0995 486 6244
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Email
+            </strong>
+
+            crisarvingoteza@gmail.com
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Address
+            </strong>
+
+            Matain, Subic, Zambales
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= FOOTER ======================== -->
+<!-- ================================================= -->
+
+<footer>
+
+    © 2026
+
+    <span>
+        Cris Arvin Goteza
+    </span>
+
+    |
+    student resume
+
+</footer>
+
+
+
+<!-- ================================================= -->
+<!-- ================= JAVASCRIPT ==================== -->
+<!-- ================================================= -->
+
+<script>
+
+
+/* ================================================= */
+/* ================= CALCULATOR ==================== */
+/* ================================================= */
+
+function addCalc(value) {
+
+    document.getElementById(
+        "calcDisplay"
+    ).value += value;
+
+}
+
+
+function clearCalc() {
+
+    document.getElementById(
+        "calcDisplay"
+    ).value = "";
+
+}
+
+
+function deleteCalc() {
+
+    let display =
+        document.getElementById(
+            "calcDisplay"
+        );
+
+    display.value =
+        display.value.slice(
+            0,
+            -1
+        );
+
+}
+
+
+function calculate() {
+
+    let display =
+        document.getElementById(
+            "calcDisplay"
+        );
+
+    try {
+
+        display.value =
+            Function(
+                "return " +
+                display.value
+            )();
+
+    }
+
+    catch {
+
+        display.value =
+            "Error";
+
+    }
+
+}
+
+
+/* ================================================= */
+/* ================= DIGITAL CLOCK ================ */
+/* ================================================= */
+
+function updateClock() {
+
+    let now =
+        new Date();
+
+
+    let hours =
+        now.getHours();
+
+    let minutes =
+        now.getMinutes();
+
+    let seconds =
+        now.getSeconds();
+
+
+    let ampm =
+        hours >= 12
+        ? "PM"
+        : "AM";
+
+
+    hours =
+        hours % 12;
+
+
+    if (hours === 0) {
+
+        hours = 12;
+
+    }
+
+
+    document.getElementById(
+        "clock"
+    ).textContent =
+
+        String(hours)
+            .padStart(2, "0")
+
+        + ":" +
+
+        String(minutes)
+            .padStart(2, "0")
+
+        + ":" +
+
+        String(seconds)
+            .padStart(2, "0")
+
+        + " " +
+
+        ampm;
+
+}
+
+
+updateClock();
+
+setInterval(
+    updateClock,
+    1000
+);
+
+
+/* ================================================= */
+/* ================= STOPWATCH ===================== */
+/* ================================================= */
+
+let stopwatchSeconds = 0;
+
+let stopwatchTimer = null;
+
+
+function updateStopwatch() {
+
+    let hours =
+        Math.floor(
+            stopwatchSeconds /
+            3600
+        );
+
+
+    let minutes =
+        Math.floor(
+            (
+                stopwatchSeconds %
+                3600
+            ) / 60
+        );
+
+
+    let seconds =
+        stopwatchSeconds %
+        60;
+
+
+    document.getElementById(
+        "stopwatch"
+    ).textContent =
+
+        String(hours)
+            .padStart(2, "0")
+
+        + ":" +
+
+        String(minutes)
+            .padStart(2, "0")
+
+        + ":" +
+
+        String(seconds)
+            .padStart(2, "0");
+
+}
+
+
+function startStopwatch() {
+
+    if (
+        stopwatchTimer !== null
+    ) {
+
+        return;
+
+    }
+
+
+    stopwatchTimer =
+        setInterval(
+            function() {
+
+                stopwatchSeconds++;
+
+                updateStopwatch();
+
+            },
+            1000
+        );
+
+}
+
+
+function pauseStopwatch() {
+
+    clearInterval(
+        stopwatchTimer
+    );
+
+    stopwatchTimer = null;
+
+}
+
+
+function resetStopwatch() {
+
+    clearInterval(
+        stopwatchTimer
+    );
+
+    stopwatchTimer = null;
+
+    stopwatchSeconds = 0;
+
+    updateStopwatch();
+
+}
+
+
+updateStopwatch();
+
+
+/* ================================================= */
+/* ================= ROCK PAPER SCISSORS ========== */
+/* ================================================= */
+
+function playRPS(player) {
+
+
+    let choices = [
+
+        "Rock",
+        "Paper",
+        "Scissors"
+
+    ];
+
+
+    let computer =
+
+        choices[
+            Math.floor(
+                Math.random() *
+                choices.length
+            )
+        ];
+
+
+    let result;
+
+
+    if (
+        player === computer
+    ) {
+
+        result =
+            "It's a Draw!";
+
+    }
+
+
+    else if (
+
+        (
+            player === "Rock" &&
+            computer === "Scissors"
+        )
+
+        ||
+
+        (
+            player === "Paper" &&
+            computer === "Rock"
+        )
+
+        ||
+
+        (
+            player === "Scissors" &&
+            computer === "Paper"
+        )
+
+    ) {
+
+        result =
+            "You Win! 🎉";
+
+    }
+
+
+    else {
+
+        result =
+            "Computer Wins!";
+
+    }
+
+
+    document.getElementById(
+        "rpsResult"
+    ).innerHTML =
+
+        "You: " +
+        player +
+
+        "<br>" +
+
+        "Computer: " +
+        computer +
+
+        "<br><br>" +
+
+        "<strong>" +
+        result +
+        "</strong>";
+
+}
+
+
+/* ================================================= */
+/* ================= WEATHER ======================= */
+/* ================================================= */
+
+async function getWeather() {
+
+
+    let city =
+
+        document.getElementById(
+            "cityInput"
+        ).value.trim();
+
+
+    let result =
+
+        document.getElementById(
+            "weatherResult"
+        );
+
+
+    if (
+        city === ""
+    ) {
+
+        result.innerHTML =
+            "Please enter a city.";
+
+        return;
+
+    }
+
+
+    result.innerHTML =
+        "Getting weather...";
+
+
+    try {
+
+
+        let response =
+
+            await fetch(
+
+                "https://geocoding-api.open-meteo.com/v1/search" +
+
+                "?name=" +
+
+                encodeURIComponent(
+                    city
+                ) +
+
+                "&count=1" +
+
+                "&language=en" +
+
+                "&format=json"
+
+            );
+
+
+        let data =
+            await response.json();
+
+
+        if (
+            !data.results
+        ) {
+
+            result.innerHTML =
+                "City not found.";
+
+            return;
+
+        }
+
+
+        let location =
+            data.results[0];
+
+
+        let weatherResponse =
+
+            await fetch(
+
+                "https://api.open-meteo.com/v1/forecast" +
+
+                "?latitude=" +
+                location.latitude +
+
+                "&longitude=" +
+                location.longitude +
+
+                "&current=" +
+                "temperature_2m," +
+                "wind_speed_10m"
+
+            );
+
+
+        let weather =
+            await weatherResponse.json();
+
+
+        result.innerHTML =
+
+            "<strong>" +
+            location.name +
+            "</strong>" +
+
+            "<br>" +
+
+            "🌡️ Temperature: " +
+
+            weather.current.temperature_2m +
+
+            "°C" +
+
+            "<br>" +
+
+            "💨 Wind: " +
+
+            weather.current.wind_speed_10m +
+
+            " km/h";
+
+
+    }
+
+
+    catch (error) {
+
+
+        result.innerHTML =
+
+            "Weather could not be loaded.";
+
+
+    }
+
+}
+
+
+</script>
+
+
+</body>
+</html>
